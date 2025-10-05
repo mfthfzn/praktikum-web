@@ -190,6 +190,7 @@ body {
   margin: 0 0 18px 0;
   color: black;
   font-size: 14px;
+  line-height: 20px;
 }
 
 .form-container form,
@@ -211,6 +212,7 @@ body {
   border: 1px solid #d1d5db;
   border-radius: 10px;
   font-size: 14px;
+  min-height: 20px;
 }
 
 .password {
@@ -253,7 +255,7 @@ body {
   padding: 0 10px 0 10px;
   position: relative;
   text-align: center;
-  height: 35px;
+  min-height: 40px;
   margin-top: 15px;
 }
 
@@ -265,19 +267,6 @@ body {
   border: 2px solid #ec0029;
   box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
   outline: 0;
-}
-
-.register {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: -15px 0 0 0;
-  font-size: 13px;
-}
-
-.register p {
-  color: #64748b;
-  font-size: 13px;
 }
 
 @media (min-width: 768px) {
@@ -295,14 +284,27 @@ body {
   }
 
   .visibility-logo {
-  margin-top: 39px;
-  margin-left: 385px;
-  position: absolute;
-  height: 24px;
-  width: 24px;
-  z-index: 5;
-}
-.login-container {
-  max-width: 750px;
-}
+    margin-top: 39px;
+    margin-left: 385px;
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    z-index: 5;
+  }
+  .login-container {
+    max-width: 750px;
+  }
+
+  .form-container #email,
+  .form-container #password {
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    font-size: 14px;
+    min-height: none;
+  }
+
+  .form-container .login-form button {
+    min-height: 35px;
+  }
 }
